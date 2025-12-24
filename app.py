@@ -7,7 +7,7 @@ app = Flask(__name__)
 def home():
     return "This app is deployed using CICD pipeline docker image."
 
-@app.route("/hello")
+@app.route("/hi")
 def hello():
     return "This route was added to check whether pipeline is getting triggered or not."
 
