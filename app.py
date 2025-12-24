@@ -11,6 +11,9 @@ def home():
 def hello():
     return "This route was added to check whether pipeline is getting triggered or not."
 
+@app.route("/testing")
+def test():
+    return "Again this is a route for pipeline testing."
 
 @app.route("/info")
 def info():
