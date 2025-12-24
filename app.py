@@ -7,6 +7,11 @@ app = Flask(__name__)
 def home():
     return "This app is deployed using CICD pipeline docker image."
 
+@app.route("/hello")
+def home():
+    return "This route was added to check whether pipeline is getting triggered or not."
+
+
 @app.route("/info")
 def info():
     return jsonify({
@@ -14,6 +19,6 @@ def info():
         "version": "v1",
         "status": "ok"
     })
-    
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
