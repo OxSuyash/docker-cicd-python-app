@@ -8,7 +8,7 @@ def home():
     return "This app is deployed using CICD pipeline docker image."
 
 @app.route("/hello")
-def home():
+def hello():
     return "This route was added to check whether pipeline is getting triggered or not."
 
 
